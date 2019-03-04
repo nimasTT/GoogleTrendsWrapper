@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTrendsASPCoreServer", "GoogleTrendsASPCoreServer\GoogleTrendsASPCoreServer.csproj", "{E87EF3CC-BADA-496B-B4C1-EBF10105D085}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTrendsClientExample", "GoogleTrendsClientExample\GoogleTrendsClientExample.csproj", "{773587FD-FD6F-4045-8BDF-C0E428CFD4DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E87EF3CC-BADA-496B-B4C1-EBF10105D085}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E87EF3CC-BADA-496B-B4C1-EBF10105D085}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E87EF3CC-BADA-496B-B4C1-EBF10105D085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{773587FD-FD6F-4045-8BDF-C0E428CFD4DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{773587FD-FD6F-4045-8BDF-C0E428CFD4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{773587FD-FD6F-4045-8BDF-C0E428CFD4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{773587FD-FD6F-4045-8BDF-C0E428CFD4DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

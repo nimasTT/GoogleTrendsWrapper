@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.NodeServices;
 
 namespace GoogleTrendsASPCoreServer
 {
@@ -26,8 +27,15 @@ namespace GoogleTrendsASPCoreServer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddLogging();
+            
+            services.AddNodeServices(options =>
+            {
+                options.LaunchWithDebugging = true;
+                options.DebuggingPort = 9229;
+            });
         }
-
+        
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
